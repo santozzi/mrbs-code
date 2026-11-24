@@ -14,6 +14,7 @@ $vocab["mrbs_abbr"]          = "MRBS";
 
 // Used in functions.inc
 $vocab["report"]             = "Informes";
+$vocab["statistics"]         = "Estadísticas";
 $vocab["admin"]              = "Administración";
 $vocab["help"]               = "Ayuda";
 $vocab["search"]             = "Búsqueda";
@@ -457,6 +458,73 @@ $vocab["unique_addresses_copied"]  = "{0, plural," .
                                      " other {# direcciones de correo únicas copiadas}}" .
                                      " al portapapeles.";
 $vocab["clipboard_copy_failed"] =  "No se pudo copiar al portapapeles.";
+
+// Used in statistics.php
+$vocab["stats_title"]              = "Estadísticas de ocupación";
+$vocab["stats_from"]               = "Desde";
+$vocab["stats_to"]                 = "Hasta";
+$vocab["stats_all"]                = "Todos";
+$vocab["stats_all_areas"]          = "Todas las áreas";
+$vocab["stats_disabled_item"]      = "%s (deshabilitada)";
+$vocab["stats_show"]               = "Ver";
+$vocab["stats_this_year"]          = "Este año";
+$vocab["stats_last_12_months"]     = "Últimos 12 meses";
+$vocab["stats_this_month"]         = "Este mes";
+$vocab["stats_next_30_days"]       = "Próximos 30 días";
+$vocab["stats_bookings"]           = "Reservas";
+$vocab["stats_hours"]              = "Horas";
+$vocab["stats_hours_booked"]       = "Horas reservadas";
+$vocab["stats_average_occupancy"]  = "Ocupación promedio (horario hábil)";
+$vocab["stats_distinct_occupants"] = "Ocupantes distintos";
+$vocab["stats_average_duration"]   = "Duración media";
+$vocab["stats_repeat_share"]       = "Reservas periódicas";
+$vocab["stats_busiest_room"]       = "Sala más usada";
+$vocab["stats_top_occupant"]       = "Ocupante con más horas";
+$vocab["stats_peak_time_slot"]     = "Franja más demandada";
+$vocab["stats_time_slot"]          = '%1$s, %2$d:00–%3$d:00';  // 1: day name, 2: start hour, 3: end hour
+$vocab["stats_rooms_title"]        = "Salas más ocupadas";
+$vocab["stats_rooms_note"]         = "Horas reservadas en el período · % del horario hábil reservado";
+$vocab["stats_occupants_title"]    = "Quiénes ocupan más las salas";
+$vocab["stats_occupants_note"]     = "Según la descripción breve de la reserva · %d primeros por horas";
+$vocab["stats_show_top_n"]         = "Ver los %d primeros en una tabla";
+$vocab["stats_monthly_title"]      = "Horas reservadas por mes";
+$vocab["stats_heatmap_title"]      = "¿Cuándo se usan las salas?";
+$vocab["stats_heatmap_note"]       = "Porcentaje de salas reservadas según día de la semana y hora, promedio del período";
+$vocab["stats_types_title"]        = "Horas reservadas por tipo";
+$vocab["stats_creators_title"]     = "Quién carga las reservas";
+$vocab["stats_creators_note"]      = "Usuarios que crearon las reservas · %d primeros";
+$vocab["stats_room_table_title"]   = "Detalle por sala";
+$vocab["stats_occupancy"]          = "Ocupación";
+$vocab["stats_occupancy_percent"]  = "Ocupación (%)";
+$vocab["stats_available_hours"]    = "Horas hábiles";
+$vocab["stats_occupant"]           = "Ocupante";
+$vocab["stats_occupants"]          = "Ocupantes";
+$vocab["stats_main_occupant"]      = "Ocupante principal";
+$vocab["stats_main_occupant_is"]   = "Ocupante principal: %s";
+$vocab["stats_distinct_rooms"]     = "Salas usadas";
+$vocab["stats_most_used_room"]     = "Sala más usada";
+$vocab["stats_bookings_created"]   = "Reservas creadas";
+$vocab["stats_average_short"]      = "Prom.";
+$vocab["stats_hours_axis"]         = "horas";
+$vocab["stats_hours_short"]        = "%s h";
+$vocab["stats_hours_long"]         = "%s horas";
+$vocab["stats_minutes_short"]      = "%s min";
+$vocab["stats_percent"]            = "%s%%";
+$vocab["stats_hours_in_bookings"]  = '%1$s horas en %2$s reservas';
+$vocab["stats_bookings_and_hours"] = '%1$s reservas · %2$s horas';
+$vocab["stats_occupancy_of_available"] = 'Ocupación: %1$s de %2$s horas hábiles';
+$vocab["stats_rooms_used"]         = '%1$s sala(s) · más usada: %2$s';
+$vocab["stats_rooms_booked"]       = "%s de las salas reservadas";
+$vocab["stats_share_of_total"]     = "%s del total";
+$vocab["stats_room_in_area"]       = '%1$s · %2$s';  // 1: room name, 2: area name
+$vocab["stats_no_data"]            = "No hay datos para este período.";
+$vocab["stats_no_name"]            = "(sin descripción)";
+$vocab["stats_download_csv"]       = "Descargar CSV";
+$vocab["stats_csv_filename"]       = 'estadisticas_%1$s_%2$s_%3$s.csv';  // 1: rooms, occupants or creators, 2: start date, 3: end date
+$vocab["stats_opening_hours"]      = '%1$s: %2$s–%3$s';  // 1: area name, 2: opening time, 3: closing time
+$vocab["stats_footnote"]           = "La ocupación compara las horas reservadas con el horario hábil de cada área (%s), " .
+                                     "sin contar los días ocultos. Los ocupantes se agrupan por la descripción breve de " .
+                                     "la reserva, sin distinguir mayúsculas ni espacios. No se incluyen las áreas que usan períodos.";
 
 // Used in admin.php
 $vocab["no_message"]         = "Actualmente no hay mensaje para mostrar a los usuarios sobre el calendario";

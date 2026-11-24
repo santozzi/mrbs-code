@@ -14,6 +14,7 @@ $vocab["mrbs_abbr"]          = "MRBS";
 
 // Used in functions.inc
 $vocab["report"]             = "Report";
+$vocab["statistics"]         = "Statistics";
 $vocab["admin"]              = "Admin";
 $vocab["help"]               = "Help";
 $vocab["search"]             = "Search";
@@ -492,6 +493,73 @@ $vocab["unique_addresses_copied"]  = "{0, plural," .
                                      " other {# unique email addresses}}" .
                                      " copied to the clipboard.";
 $vocab["clipboard_copy_failed"]    = "Clipboard copy failed.";
+
+// Used in statistics.php
+$vocab["stats_title"]              = "Occupancy statistics";
+$vocab["stats_from"]               = "From";
+$vocab["stats_to"]                 = "To";
+$vocab["stats_all"]                = "All";
+$vocab["stats_all_areas"]          = "All areas";
+$vocab["stats_disabled_item"]      = "%s (disabled)";
+$vocab["stats_show"]               = "Show";
+$vocab["stats_this_year"]          = "This year";
+$vocab["stats_last_12_months"]     = "Last 12 months";
+$vocab["stats_this_month"]         = "This month";
+$vocab["stats_next_30_days"]       = "Next 30 days";
+$vocab["stats_bookings"]           = "Bookings";
+$vocab["stats_hours"]              = "Hours";
+$vocab["stats_hours_booked"]       = "Hours booked";
+$vocab["stats_average_occupancy"]  = "Average occupancy (opening hours)";
+$vocab["stats_distinct_occupants"] = "Distinct occupants";
+$vocab["stats_average_duration"]   = "Average duration";
+$vocab["stats_repeat_share"]       = "Repeat bookings";
+$vocab["stats_busiest_room"]       = "Busiest room";
+$vocab["stats_top_occupant"]       = "Occupant with most hours";
+$vocab["stats_peak_time_slot"]     = "Busiest time slot";
+$vocab["stats_time_slot"]          = '%1$s, %2$d:00–%3$d:00';  // 1: day name, 2: start hour, 3: end hour
+$vocab["stats_rooms_title"]        = "Busiest rooms";
+$vocab["stats_rooms_note"]         = "Hours booked in the period · % of opening hours booked";
+$vocab["stats_occupants_title"]    = "Who uses the rooms most";
+$vocab["stats_occupants_note"]     = "By brief description of the booking · top %d by hours";
+$vocab["stats_show_top_n"]         = "Show the top %d in a table";
+$vocab["stats_monthly_title"]      = "Hours booked per month";
+$vocab["stats_heatmap_title"]      = "When are the rooms in use?";
+$vocab["stats_heatmap_note"]       = "Percentage of rooms booked by day of the week and hour, averaged over the period";
+$vocab["stats_types_title"]        = "Hours booked per type";
+$vocab["stats_creators_title"]     = "Who makes the bookings";
+$vocab["stats_creators_note"]      = "Users who created the bookings · top %d";
+$vocab["stats_room_table_title"]   = "Breakdown by room";
+$vocab["stats_occupancy"]          = "Occupancy";
+$vocab["stats_occupancy_percent"]  = "Occupancy (%)";
+$vocab["stats_available_hours"]    = "Opening hours";
+$vocab["stats_occupant"]           = "Occupant";
+$vocab["stats_occupants"]          = "Occupants";
+$vocab["stats_main_occupant"]      = "Main occupant";
+$vocab["stats_main_occupant_is"]   = "Main occupant: %s";
+$vocab["stats_distinct_rooms"]     = "Rooms used";
+$vocab["stats_most_used_room"]     = "Most used room";
+$vocab["stats_bookings_created"]   = "Bookings created";
+$vocab["stats_average_short"]      = "Avg.";
+$vocab["stats_hours_axis"]         = "hours";
+$vocab["stats_hours_short"]        = "%s h";
+$vocab["stats_hours_long"]         = "%s hours";
+$vocab["stats_minutes_short"]      = "%s min";
+$vocab["stats_percent"]            = "%s%%";
+$vocab["stats_hours_in_bookings"]  = '%1$s hours in %2$s bookings';
+$vocab["stats_bookings_and_hours"] = '%1$s bookings · %2$s hours';
+$vocab["stats_occupancy_of_available"] = 'Occupancy: %1$s of %2$s opening hours';
+$vocab["stats_rooms_used"]         = '%1$s room(s) · most used: %2$s';
+$vocab["stats_rooms_booked"]       = "%s of the rooms booked";
+$vocab["stats_share_of_total"]     = "%s of the total";
+$vocab["stats_room_in_area"]       = '%1$s · %2$s';  // 1: room name, 2: area name
+$vocab["stats_no_data"]            = "No data for this period.";
+$vocab["stats_no_name"]            = "(no description)";
+$vocab["stats_download_csv"]       = "Download CSV";
+$vocab["stats_csv_filename"]       = 'statistics_%1$s_%2$s_%3$s.csv';  // 1: rooms, occupants or creators, 2: start date, 3: end date
+$vocab["stats_opening_hours"]      = '%1$s: %2$s–%3$s';  // 1: area name, 2: opening time, 3: closing time
+$vocab["stats_footnote"]           = "Occupancy compares the hours booked with the opening hours of each area (%s), " .
+                                     "excluding hidden days. Occupants are grouped by the brief description of " .
+                                     "the booking, ignoring case and spacing. Areas that use periods are not included.";
 
 // Used in admin.php
 $vocab["no_message"]         = "There is currently no message to display above the calendar.";

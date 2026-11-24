@@ -226,6 +226,7 @@ function print_menu_items(string $query) : void
   }
 
   $menu_items['rooms'] = 'admin.php';
+  $menu_items['statistics'] = 'statistics.php';
 
   if (auth()->canCreateUsers())
   {
