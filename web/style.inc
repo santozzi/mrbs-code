@@ -33,15 +33,21 @@ echo link_html(($debug) ? 'jquery/ui/css/cupertino/jquery-ui.theme.css' : 'jquer
 echo link_html(($debug) ? 'jquery/datatables/datatables.css' : 'jquery/datatables/datatables.min.css', true);
 echo link_html('js/flatpickr/css/flatpickr.min.css', true);
 echo link_html('jquery/select2/dist/css/select2.min.css', true);
-echo link_html(multisite('css/mrbs.css.php'), true);
+// Make browsers fetch the CSS again when the booking type colours change
+$css_url = function (string $url) : string
+{
+  return (BookingTypes::isEnabled()) ? add_query_parameter($url, 't', BookingTypes::getVersion()) : $url;
+};
+
+echo link_html($css_url(multisite('css/mrbs.css.php')), true);
 
 $using_rtl_lang = Locale::isRightToLeft(Language::getInstance()->getWebLang());
 if ($using_rtl_lang)
 {
-  echo link_html(multisite('css/mrbs-rtl.css.php'), true);
+  echo link_html($css_url(multisite('css/mrbs-rtl.css.php')), true);
 }
 
-echo link_html(multisite('css/mrbs-print.css.php'), true, 'print');
+echo link_html($css_url(multisite('css/mrbs-print.css.php')), true, 'print');
 
 echo "<!--[if IE]>\n";
 echo link_html('css/mrbs-ie.css', true);

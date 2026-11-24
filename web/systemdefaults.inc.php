@@ -2086,6 +2086,23 @@ $booking_types[] = "I";
 // still have a type associated with it in the database, which will be the default type.)
 // unset($booking_types);
 
+// As an alternative to setting $booking_types, $color_types and the "type.X" vocab strings
+// in the config file, you can let admins manage the booking types on the Booking Types page
+// (edit_types.php, linked from the Rooms page), where they can add types and change their
+// names, colours and order, disable types that are no longer used for new bookings and
+// delete types that no bookings use.  To enable the page, set $booking_types_file to the full
+// path of a file that the web server can create and write to, for example
+//
+// $booking_types_file = "/var/lib/mrbs/booking_types.json";
+//
+// The settings are stored in that file rather than in the database so that they are also
+// available to the CSS files.  You should put the file outside the web server's document root.
+// Until the file has been created the settings in the config file apply, and the page starts
+// with those.  Once it exists, the settings in the file override $booking_types, $color_types
+// and the booking type names in the language files and $vocab_override.  If you are running
+// multiple sites, give each site its own file.
+$booking_types_file = null;
+
 // Default brief description for new bookings
 $default_name = "";
 

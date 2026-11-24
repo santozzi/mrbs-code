@@ -517,6 +517,41 @@ $vocab["administration"]     = "Room Details";
 $vocab["invalid_area_name"]  = "That area name has already been used!";
 $vocab["empty_name"]         = "You have not entered a name!";
 
+// Used in edit_types.php and edit_types_handler.php
+$vocab["booking_types"]            = "Booking Types";
+$vocab["booking_types_intro"]      = "Add booking types and change their names, colours and order.";
+$vocab["edit_booking_types"]       = "Edit booking types";
+$vocab["booking_types_not_enabled"] = "Booking types can't be edited here because \$booking_types_file hasn't been set in the config file.";
+$vocab["booking_types_file_invalid"] = "The booking types file %s can't be read or isn't valid, so the booking types in the config file are being used.  Saving a change will replace the file.";
+$vocab["booking_types_from_config"] = "These booking types come from the config file.  Once you save a change, the booking types will be managed on this page.";
+$vocab["booking_types_not_writable"] = "Warning: the web server can't write to %s, so changes can't be saved.";
+$vocab["booking_types_explanation"] = "An inactive type can't be chosen for new bookings, but bookings that already use it " .
+                                      "are still shown with its name and colour.  Only types that no bookings use can be deleted.";
+$vocab["booking_type_order"]       = "Order";
+$vocab["booking_type_code"]        = "Code";
+$vocab["booking_type_color"]       = "Colour";
+$vocab["booking_type_active"]      = "Active";
+$vocab["booking_type_uses"]        = "Bookings";
+$vocab["booking_type_move_up"]     = "Move up";
+$vocab["booking_type_move_down"]   = "Move down";
+$vocab["booking_type_delete_confirm"] = "Delete the booking type \"%s\"?";
+$vocab["booking_type_add"]         = "Add booking type";
+$vocab["booking_type_no_free_codes"] = "There are no more codes available.";
+$vocab["booking_type_code_note"]   = "The code is stored with each booking and can't be changed later.";
+$vocab["booking_type_invalid_code"] = "The code must be a single letter from A to Z that isn't already used.";
+$vocab["booking_type_code_exists"] = "That code is already used by \"%s\".";
+$vocab["booking_type_not_found"]   = "The booking type %s doesn't exist.";
+$vocab["booking_type_name_empty"]  = "The name can't be empty.";
+$vocab["booking_type_name_too_long"] = "The name is too long.";
+$vocab["booking_type_name_invalid_chars"] = "The name can't contain any of the characters < > & \" '";
+$vocab["booking_type_invalid_color"] = "The colour isn't valid.";
+$vocab["booking_type_last_active"] = "At least one booking type must be active.";
+$vocab["booking_type_in_use"]      = "\"%s\" can't be deleted because some bookings use it.  Make it inactive instead.";
+$vocab["booking_types_save_failed"] = 'The booking types could not be saved to %2$s.  Check that the web server can write to it.';
+$vocab["booking_type_added"]       = "\"%s\" has been added.";
+$vocab["booking_type_saved"]       = "The changes to \"%s\" have been saved.";
+$vocab["booking_type_deleted"]     = "The booking type has been deleted.";
+
 // Used in edit_area.php and/or edit_room.php
 $vocab["editarea"]                = "Edit Area";
 $vocab["change"]                  = "Change";

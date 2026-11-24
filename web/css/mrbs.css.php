@@ -1931,6 +1931,42 @@ div#checks span {
 }
 
 
+/* ------------ EDIT_TYPES.PHP ------------------*/
+
+#booking_types {
+  padding: 1em;
+}
+
+#booking_types_table form {
+  display: inline;
+}
+
+#booking_types_table td {
+  vertical-align: middle;
+}
+
+#booking_types_table td.order {
+  white-space: nowrap;
+}
+
+#booking_types_table td.code,
+#booking_types_table td.active {
+  text-align: center;
+  font-weight: bold;
+}
+
+#booking_types_table td.uses {
+  text-align: right;
+}
+
+#booking_types h3 {
+  margin-top: 2em;
+}
+
+#add_booking_type label {
+  margin-right: 1em;
+}
+
 /* ------------ EDIT_USERS.PHP ------------------*/
 
 div#user_list {

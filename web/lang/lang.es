@@ -489,6 +489,41 @@ $vocab["message"]       = "Mensaje a usuarios";
 $vocab["display_from"]  = "Mostrar desde:";
 $vocab["display_until"] = "Mostrar hasta";
 
+// Used in edit_types.php and edit_types_handler.php
+$vocab["booking_types"]            = "Tipos de reserva";
+$vocab["booking_types_intro"]      = "Agregue tipos de reserva y cambie sus nombres, colores y orden.";
+$vocab["edit_booking_types"]       = "Editar tipos de reserva";
+$vocab["booking_types_not_enabled"] = "Los tipos de reserva no se pueden editar aquí porque no se configuró \$booking_types_file en el archivo de configuración.";
+$vocab["booking_types_file_invalid"] = "El archivo de tipos de reserva %s no se puede leer o no es válido, así que se usan los tipos del archivo de configuración.  Al guardar un cambio se reemplazará el archivo.";
+$vocab["booking_types_from_config"] = "Estos tipos de reserva vienen del archivo de configuración.  Al guardar el primer cambio, pasarán a administrarse desde esta página.";
+$vocab["booking_types_not_writable"] = "Atención: el servidor web no puede escribir en %s, así que no se podrán guardar cambios.";
+$vocab["booking_types_explanation"] = "Un tipo inactivo no se ofrece para reservas nuevas, pero las reservas que ya lo usan " .
+                                      "se siguen mostrando con su nombre y color.  Solo se pueden eliminar los tipos que no usa ninguna reserva.";
+$vocab["booking_type_order"]       = "Orden";
+$vocab["booking_type_code"]        = "Código";
+$vocab["booking_type_color"]       = "Color";
+$vocab["booking_type_active"]      = "Activo";
+$vocab["booking_type_uses"]        = "Reservas";
+$vocab["booking_type_move_up"]     = "Subir";
+$vocab["booking_type_move_down"]   = "Bajar";
+$vocab["booking_type_delete_confirm"] = "¿Eliminar el tipo de reserva «%s»?";
+$vocab["booking_type_add"]         = "Agregar tipo de reserva";
+$vocab["booking_type_no_free_codes"] = "No quedan códigos disponibles.";
+$vocab["booking_type_code_note"]   = "El código se guarda en cada reserva y no se puede cambiar después.";
+$vocab["booking_type_invalid_code"] = "El código debe ser una sola letra de la A a la Z que no esté en uso.";
+$vocab["booking_type_code_exists"] = "Ese código ya lo usa «%s».";
+$vocab["booking_type_not_found"]   = "El tipo de reserva %s no existe.";
+$vocab["booking_type_name_empty"]  = "El nombre no puede estar vacío.";
+$vocab["booking_type_name_too_long"] = "El nombre es demasiado largo.";
+$vocab["booking_type_name_invalid_chars"] = "El nombre no puede contener los caracteres < > & \" '";
+$vocab["booking_type_invalid_color"] = "El color no es válido.";
+$vocab["booking_type_last_active"] = "Tiene que quedar al menos un tipo de reserva activo.";
+$vocab["booking_type_in_use"]      = "«%s» no se puede eliminar porque lo usan algunas reservas.  Desactívelo en su lugar.";
+$vocab["booking_types_save_failed"] = 'No se pudieron guardar los tipos de reserva en %2$s.  Verifique que el servidor web pueda escribir en él.';
+$vocab["booking_type_added"]       = "Se agregó «%s».";
+$vocab["booking_type_saved"]       = "Se guardaron los cambios de «%s».";
+$vocab["booking_type_deleted"]     = "Se eliminó el tipo de reserva.";
+
 // Used in edit_area.php and/or edit_room.php
 $vocab["editarea"]                = "Modificar área";
 $vocab["change"]                  = "Cambiar";

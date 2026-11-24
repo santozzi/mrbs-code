@@ -53,7 +53,8 @@ function get_js_vocab(string $tag, ...$values) : string
  */
 function get_type_vocab(string $type) : string
 {
-  return get_vocab("type.$type");
+  // Names set on the Booking Types page take precedence over the vocab strings
+  return BookingTypes::getName($type) ?? get_vocab("type.$type");
 }
 
 

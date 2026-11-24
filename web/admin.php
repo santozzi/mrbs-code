@@ -320,6 +320,23 @@ if (is_book_admin())
   $form->render();
 }
 
+// Add in the link for managing the booking types, if that has been enabled
+if (is_admin() && BookingTypes::isEnabled())
+{
+  echo "<h2>" . get_vocab("booking_types") . "</h2>\n";
+  echo '<p>' . escape_html(get_vocab("booking_types_intro")) . "</p>\n";
+  $form = new Form(Form::METHOD_GET);
+  $form->setAttributes(array(
+      'id'     => 'edit_types',
+      'action' => multisite('edit_types.php')
+    )
+  );
+  $submit = new ElementInputSubmit();
+  $submit->setAttribute('value', get_vocab('edit_booking_types'));
+  $form->addElement($submit);
+  $form->render();
+}
+
 echo "<h2>" . get_vocab("administration") . "</h2>\n";
 if (!empty($error))
 {

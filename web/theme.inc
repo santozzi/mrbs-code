@@ -14,3 +14,7 @@ if (is_file($theme_file) && is_readable($theme_file))
 {
   require $theme_file;
 }
+
+// Apply any booking types set on the Booking Types page.  This has to be done after
+// the styling has been loaded so that the colours set on that page take precedence.
+BookingTypes::apply();
